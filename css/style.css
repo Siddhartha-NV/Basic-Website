@@ -1,0 +1,120 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --amazon-blue: #131921;
+    --amazon-light-blue: #232f3e;
+    --amazon-orange: #febd69;
+    --amazon-dark-orange: #f0c14b;
+    --light-gray: #f3f3f3;
+    --text-color: #111;
+}
+
+body {
+    background-color: #fff;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+    background-color: var(--amazon-blue);
+    color: white;
+    padding: 10px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--amazon-orange);
+    text-decoration: none;
+}
+
+nav .menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.9rem;
+}
+
+nav .menu a:hover {
+    color: var(--amazon-orange);
+}
+
+#cart-count {
+    background-color: var(--amazon-orange);
+    color: var(--amazon-blue);
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+/* Hero Section (Home Page) */
+.hero {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), 
+                url('https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 { font-size: 3rem; margin-bottom: 10px; }
+.hero button {
+    padding: 12px 30px;
+    font-size: 1rem;
+    background-color: var(--amazon-orange);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Containers */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Forms (Login & Checkout) */
+form {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--amazon-dark-orange);
+    border: 1px solid #a88734;
+    cursor: pointer;
+    border-radius: 4px;
+}

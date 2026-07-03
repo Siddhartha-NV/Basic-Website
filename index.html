@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon | Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/products.css">
+</head>
+<body>
+    <nav>
+        <div class="logo"><a href="index.html">Amazon</a></div>
+        <div class="menu">
+            <a href="products.html">Products</a>
+            <a href="wishlist.html">Wishlist</a>
+            <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+            <a href="login.html" id="auth-link">Login</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Welcome to Amazon</h1>
+        <p>Learn JavaScript by building a store!</p>
+        <button onclick="location.href='products.html'">Shop Now</button>
+    </header>
+
+    <section class="container">
+        <h2>Featured Products</h2>
+        <div id="featured-products" class="product-grid">
+            <!-- JS will inject featured products here -->
+        </div>
+    </section>
+
+    <script type="module" src="js/app.js"></script>
+    <script type="module" src="js/products.js"></script>
+</body>
+</html>
